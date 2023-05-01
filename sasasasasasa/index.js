@@ -974,8 +974,8 @@ const keys = [
 ];
 
 let lang = localStorage.getItem('lang');
-console.log(lang);
-if (!lang) {
+console.log(typeof (lang));
+if (!lang || lang === 0 || lang === '0') {
   lang = 'eng';
 }
 console.log(lang);
